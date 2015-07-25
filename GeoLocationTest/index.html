@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head lang="en">
+  <title>Geo Location Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<script type="application/javascript">
+
+  function geoLocSuccess(position) {
+    console.log('latitude[' + position.coords.latitude +
+      ']...longitude[' + position.coords.longitude + ']');
+  }
+
+  function geoLocFailure(error) {
+    console.log('Error callback [' + error.message + ']');
+  }
+
+  navigator.geolocation.getCurrentPosition(geoLocSuccess, geoLocFailure);
+
+</script>
+
+</body>

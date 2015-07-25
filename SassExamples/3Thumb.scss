@@ -1,0 +1,264 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+
+$mobileSize: 568px;  // iphone5 landscape
+$tabletMinSize: $mobileSize + 1;  // nexus7 landscape
+$tabletMaxSize: 960px;  // nexus7 landscape
+
+$normalTextColor: #333;
+$lightTextColor: #777;
+
+$featureColor: #004a82;
+$featureDarkColor: darken($featureColor, 10%);
+
+$lighterSectionBackground: #f8f8f8;
+$darkerSectionBackground: #f0f0f0;
+
+
+body {
+  color: $normalTextColor;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+}
+
+
+section {
+  padding: 20px 30px 20px 30px;
+
+  @media screen and (max-width: $mobileSize) {
+    padding: 10px 5px 10px 5px;
+  }
+
+  @media only screen and (min-width: $tabletMinSize) and (max-width: $tabletMaxSize) {
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+
+iframe#trailer {
+  @media screen and (max-width: $mobileSize) {
+    width: 300px;
+    height: 169px;
+  }
+
+  @media only screen and (min-width: $tabletMinSize) and (max-width: $tabletMaxSize) {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+
+h1 {
+  color: $featureDarkColor;
+
+  @media screen and (max-width: $mobileSize) {
+    font-size: 1.25em;
+  }
+}
+
+
+h2 {
+  color: $featureDarkColor;
+
+  @media screen and (max-width: $mobileSize) {
+    font-size: 1em;
+    margin: 0.5em 0 0.5em 0;
+  }
+}
+
+
+h3 {
+  color: $featureColor;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $mobileSize) {
+    font-size: 1em;
+    margin: 0.5em 0 0.5em 0;
+  }
+}
+
+
+p {
+  font-size: 1.25em;
+
+  @media screen and (max-width: $mobileSize) {
+    font-size: 0.80em;
+    margin: 0.5em 0 0.5em 0;
+  }
+}
+
+
+a {
+  color: $normalTextColor;
+  text-decoration: none;
+
+  &:hover {
+    color: $featureColor;
+  }
+
+  &:active {
+    color: $featureDarkColor;
+  }
+}
+
+
+.centered {
+  text-align: center;
+}
+
+
+.section-container {
+  @include outer-container;
+}
+
+
+.social-group {
+  @include span-columns(6);
+  @include shift(3);
+
+  @media screen and (max-width: $mobileSize) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+}
+
+
+.testimonial-group {
+  @include outer-container;
+}
+
+
+.testimonial-entry {
+  @include span-columns(4);
+
+  @media screen and (max-width: $mobileSize) {
+    @include span-columns(12);
+    padding: 0 10px 0 10px;
+  }
+
+  .testimonial-attrib {
+    color: $lightTextColor;
+    font-size: 1em;
+    font-style: italic;
+    margin: 0;
+    text-align: right;
+
+    @media screen and (max-width: $mobileSize) {
+      font-size: 0.70em;
+    }
+  }
+}
+
+
+#main {
+  background-color: $darkerSectionBackground;
+  background-image: url('../images/PowerPlantBanner.jpg');
+  background-position: 65% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 475px;
+  overflow: hidden;
+  width: 100%;
+
+  @media screen and (max-width: $mobileSize) {
+    height: 200px;
+  }
+}
+
+
+#download {
+  background-color: $lighterSectionBackground;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+
+.description {
+  @include span-columns(10);
+  @include shift(1);
+
+  @media screen and (max-width: $mobileSize) {
+    @include span-columns(12);
+    @include shift(0);
+    padding: 0 10px 0 10px;
+  }
+}
+
+
+.download-icon {
+  @include span-columns(12);
+  text-align: center;
+
+  @media screen and (max-width: $mobileSize) {
+    padding-top: 10px;
+  }
+}
+
+
+.store-statement {
+  color: $normalTextColor;
+  font-size: 12px;
+  margin: 5px 0 5px 0;
+
+  @media screen and (max-width: $mobileSize) {
+    font-size: 10px;
+    margin: 0 0 5px 0;
+  }
+}
+
+
+#video {
+  background-color: $darkerSectionBackground;
+  text-align: center;
+}
+
+
+#testimonies {
+  background-color: $lighterSectionBackground;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+
+#follow {
+  background-color: $darkerSectionBackground;
+  text-align: center;
+}
+
+
+#legal {
+  background-color: $featureColor;
+  color: white;
+
+  p {
+    font-size: 0.75em;
+    text-align: center;
+  }
+}
+
+
+#social-list {
+  list-style-type: none;
+  @include clearfix;
+
+  @media screen and (max-width: $mobileSize) {
+    padding: 0;
+  }
+
+  li {
+    float: left;
+    padding-right: 20px;
+    width: 33%;
+  }
+
+  li:last-child {
+    padding: 0;
+  }
+}

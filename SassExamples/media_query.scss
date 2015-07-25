@@ -1,0 +1,41 @@
+
+$phoneSize: 568px;
+$tabletMinSize: $phoneSize + 1;
+$tabletPortrait: 768px;
+$laptopSize: 960px;
+
+// baseline preview image size
+$screenThumbWidth: 256px;
+$screenThumbHeight: 192px;
+$screenThumbPhoneScale: 0.75;  // only 75% for smaller screens
+$screenThumbLaptopScale: 1.25;  // up to 125% for larger screens
+
+
+.picture-group {
+  .picture-entry {
+
+    @media screen and (max-width: $phoneSize) {
+      text-align: center;
+    }
+  }
+
+  img {
+    width: $screenThumbWidth;
+    height: $screenThumbHeight;
+
+    @media screen and (max-width: $phoneSize) {
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: $tabletMinSize) and (max-width: $tabletPortrait) {
+      width: $screenThumbWidth * $screenThumbPhoneScale;
+      height: $screenThumbHeight * $screenThumbPhoneScale;
+    }
+
+    @media screen and (min-width: $laptopSize) {
+      width: $screenThumbWidth * $screenThumbLaptopScale;
+      height: $screenThumbHeight * $screenThumbLaptopScale;
+    }
+  }
+}

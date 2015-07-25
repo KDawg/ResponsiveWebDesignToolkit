@@ -1,0 +1,223 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  color: #333333;
+  font-family: 'Montserrat', 'Helvetica', sans-serif; }
+
+section {
+  padding: 20px 30px 20px 30px; }
+  @media screen and (max-width: 568px) {
+    section {
+      padding: 10px 5px 10px 5px; } }
+  @media only screen and (min-width: 569px) and (max-width: 960px) {
+    section {
+      padding: 20px 20px 20px 20px; } }
+
+@media screen and (max-width: 568px) {
+  iframe#trailer {
+    width: 300px;
+    height: 169px; } }
+@media only screen and (min-width: 569px) and (max-width: 960px) {
+  iframe#trailer {
+    width: 560px;
+    height: 315px; } }
+
+h1 {
+  color: #002d4f; }
+  @media screen and (max-width: 568px) {
+    h1 {
+      font-size: 1.25em; } }
+
+h2 {
+  color: #002d4f; }
+  @media screen and (max-width: 568px) {
+    h2 {
+      font-size: 1em;
+      margin: 0.5em 0 0.5em 0; } }
+
+h3 {
+  color: #004a82;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-transform: uppercase; }
+  @media screen and (max-width: 568px) {
+    h3 {
+      font-size: 1em;
+      margin: 0.5em 0 0.5em 0; } }
+
+p {
+  font-size: 1.25em; }
+  @media screen and (max-width: 568px) {
+    p {
+      font-size: 0.80em;
+      margin: 0.5em 0 0.5em 0; } }
+
+a {
+  color: #333333;
+  text-decoration: none; }
+  a:hover {
+    color: #004a82; }
+  a:active {
+    color: #002d4f; }
+
+.centered {
+  text-align: center; }
+
+.section-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .section-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.social-group {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%; }
+  .social-group:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 568px) {
+    .social-group {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .social-group:last-child {
+        margin-right: 0; } }
+
+.testimonial-group {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .testimonial-group:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.testimonial-entry {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .testimonial-entry:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 568px) {
+    .testimonial-entry {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      padding: 0 10px 0 10px; }
+      .testimonial-entry:last-child {
+        margin-right: 0; } }
+  .testimonial-entry .testimonial-attrib {
+    color: #777777;
+    font-size: 1em;
+    font-style: italic;
+    margin: 0;
+    text-align: right; }
+    @media screen and (max-width: 568px) {
+      .testimonial-entry .testimonial-attrib {
+        font-size: 0.70em; } }
+
+#main {
+  background-color: #f0f0f0;
+  background-image: url("../images/PowerPlantBanner.jpg");
+  background-position: 65% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 475px;
+  overflow: hidden;
+  width: 100%; }
+  @media screen and (max-width: 568px) {
+    #main {
+      height: 200px; } }
+
+#download {
+  background-color: #f8f8f8; }
+  #download h1 {
+    text-align: center; }
+
+.description {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  .description:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 568px) {
+    .description {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 0%;
+      padding: 0 10px 0 10px; }
+      .description:last-child {
+        margin-right: 0; } }
+
+.download-icon {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  text-align: center; }
+  .download-icon:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 568px) {
+    .download-icon {
+      padding-top: 10px; } }
+
+.store-statement {
+  color: #333333;
+  font-size: 12px;
+  margin: 5px 0 5px 0; }
+  @media screen and (max-width: 568px) {
+    .store-statement {
+      font-size: 10px;
+      margin: 0 0 5px 0; } }
+
+#video {
+  background-color: #f0f0f0;
+  text-align: center; }
+
+#testimonies {
+  background-color: #f8f8f8; }
+  #testimonies h1 {
+    text-align: center; }
+
+#follow {
+  background-color: #f0f0f0;
+  text-align: center; }
+
+#legal {
+  background-color: #004a82;
+  color: white; }
+  #legal p {
+    font-size: 0.75em;
+    text-align: center; }
+
+#social-list {
+  list-style-type: none; }
+  #social-list:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (max-width: 568px) {
+    #social-list {
+      padding: 0; } }
+  #social-list li {
+    float: left;
+    padding-right: 20px;
+    width: 33%; }
+  #social-list li:last-child {
+    padding: 0; }

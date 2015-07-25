@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head lang="en">
+  <title>Touch Events Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<h3 id="touch-me-zone" style="background-color: lavender; padding: 50px;">Touch Events Test</h3>
+
+<script type="application/javascript">
+
+  var zoneEl = document.getElementById('touch-me-zone');
+
+  zoneEl.addEventListener('touchstart', function() {
+    console.log('touch start');
+  }, false);
+
+  zoneEl.addEventListener('touchend', function() {
+    console.log('touch end');
+  }, false);
+
+  zoneEl.addEventListener('touchmove', function() {
+    console.log('touch move');
+  }, false);
+
+</script>
+
+</body>
